@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustpilot Review Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 30px;
+            color: #4CAF50;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            margin: 30px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+        label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Trustpilot Review</h1>
+    <form action="/search" method="post">
+        <label for="company-name">Enter Company Name:</label>
+        <input type="text" id="company-name" name="company-name" required>
+        <p class="note">Note: The input must not contain spaces.</p>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
